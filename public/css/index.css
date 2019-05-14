@@ -70,16 +70,28 @@ img {
     float: left;
 }
 
-.search_top {
-    width: 400px;
-    height: 200px;
-    padding-top: 100px;
-    margin: 0 auto 0 auto;
+.search_panel {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 60px;
 }
 
-.search_top .search {}
+.search_panel .toolbar {
+    width: 400px;
+}
 
-.result li {
+.item {
     border-bottom: 1px solid #ededed;
-    padding: 5px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.item .title {
+    font-size: 18px;
+    color: #7757ea;
+}
+
+.item .detail {
+    margin-top: 5px;
+    font-size: 16px
 }

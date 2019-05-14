@@ -15,11 +15,11 @@ window.onload = function() {
     var search = document.getElementById("search");
     var result = document.getElementById("result");
     search.onclick = function() {
-        requst("http://127.1.1.1:3389/search/" + keyword.value, function(res) {
+        requst("http://39.97.120.241:3389/search/" + keyword.value, function(res) {
             var data = JSON.parse(res);
             var html = "";
             for (var i = 0; i < data.length; i++) {
-                html += "<li>" + data[i].name + "<br/>" + data[i].content + "</li>"
+                html += "<li class='item'><span class='title'>" + data[i].name + "</span><p class='detail'>" + data[i].content + "</p></li>"
             }
             result.innerHTML = html;
         });
