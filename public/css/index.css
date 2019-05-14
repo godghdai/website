@@ -81,9 +81,14 @@ img {
     width: 400px;
 }
 
-.item {
+.result a {
+    display: block;
     border-bottom: 1px solid #ededed;
     padding: 10px 0px 10px 0px;
+}
+
+.result a:hover {
+    background-color: #edeef0;
 }
 
 .item .title {
