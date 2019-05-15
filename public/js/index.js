@@ -21,7 +21,7 @@ window.onload = function() {
 }
 
 function reload(word) {
-    requst("http://39.97.120.241:3389/search/" + word, function(res) {
+    requst("http://127.1.1.1:3389/search/" + word, function(res) {
         var data = JSON.parse(res);
         var html = "";
         for (var i = 0; i < data.length; i++) {
@@ -36,6 +36,7 @@ function bindClickEvent() {
     var childs = result.children;
     for (var i = 0; i < childs.length; i++) {
         childs[i].onclick = function() {
+            keyword.value = this.children[0].innerText[3];
             reload(this.children[0].innerText[3]);
         };
     }
