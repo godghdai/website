@@ -26,9 +26,19 @@ body {
 
 .left {
     float: left;
+    border: 1px solid #e5d6d6;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 2px 5px 0px 5px;
+}
+
+.right {
+    height: 30px;
+    box-sizing: border-box;
 }
 
 .container {
+    background-color: white;
     position: relative;
     padding: 40px 10px 10px 10px;
     width: 100%;
@@ -42,6 +52,28 @@ body {
     top: 5px;
     height: 30px;
     width: 400px;
+}
+
+.toolbar .keyword {
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*解决ios上按钮的圆角问题*/
+    border-radius: 0;
+    /*解决ios上输入框圆角问题*/
+    outline: medium;
+    /*去掉鼠标点击的默认黄色边框*/
+    background-color: transparent;
+}
+
+.toolbar .search {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    padding: 0px 5px 0px 5px;
+    box-sizing: border-box;
 }
 
 .toolbar .keyword,
